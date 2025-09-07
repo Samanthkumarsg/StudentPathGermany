@@ -1,5 +1,7 @@
+import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Intro from "@/components/Intro";
+import SectionHelp from "@/components/SectionHelp";
 import SectionWhyUs from "@/components/SectionWhyUs";
 import SectionWorking from "@/components/SectionWorking";
 import Image from "next/image";
@@ -11,6 +13,8 @@ export default function Home() {
       <Intro />
       <SectionWorking />
       <SectionWhyUs />
+      <SectionHelp />
+      <Footer />
       {/* <iframe
         src="https://tally.so/embed/3q90rY?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
         width="100%"

@@ -55,8 +55,8 @@ const components: { title: string; href: string; description: string }[] = [
 export function Header() {
     return (
         <div className="bg-white py-3 border border-b-0 flex flex-row items-center bg-white/50 backdrop-sepia-0 ">
-            <div className="px-3 w-28  mr-12">
-                <h1 className="font-semibold tracking-tight bg-linear-to-r from-stone-800 to-violet-500 bg-clip-text text-transparent text-lg"> ProfilePath</h1>
+            <div className="px-3  mr-12">
+                <h1 className="font-semibold tracking-tight bg-linear-to-r from-stone-800 to-violet-500 bg-clip-text text-transparent text-lg"> studentpath germany</h1>
             </div>
 
         </div>
