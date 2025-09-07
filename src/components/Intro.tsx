@@ -16,7 +16,7 @@ const Intro = () => {
                         All in one platform for Housing, legal registration, bank account, airport pickup, insurance, and jobs.
                     </h2>
                     <div className="flex flex-wrap items-center justify-center gap-2 md:flex-row mt-10">
-                        <Button className="outline-2 outline-offset-6 outline-stone-400 outline-dashed shadow-md">
+                        <Button data-tally-open="3q90rY" data-tally-hide-title="1" data-tally-overlay="1" data-tally-form-events-forwarding="1" className="outline-2 outline-offset-6 outline-stone-400 outline-dashed shadow-md">
                             Start Your Onboarding Now
                         </Button>
                     </div>
