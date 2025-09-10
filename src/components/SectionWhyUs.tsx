@@ -9,7 +9,7 @@ const SectionWhyUs = () => {
                     Services we provide
                 </div>
                 <h1 className="scroll-m-20 text-center font-normal tracking-tight text-balance mt-1 bg-gradient-to-r from-stone-800 to-violet-800 bg-clip-text text-transparent text-md/10">
-                    We'll deliver a tailored plan, including housing options, airport pickup, and a step-by-step checklist.
+                    We&apos;ll deliver a tailored plan, including housing options, airport pickup, and a step-by-step checklist.
                 </h1>
             </div>
 
@@ -37,7 +37,6 @@ const SectionWhyUs = () => {
                     <h3 className="text-md font-medium mb-1">Banking & Legal Made Simple</h3>
                     <p className='text-stone-600 font-normal text-sm'>Help with Anmeldung, bank accounts, health insurance, SIM card.</p>
                 </div>
-
 
 
                 <div className="flex flex-col p-5 border rounded-lg col-span-2 sm:col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1 ">
