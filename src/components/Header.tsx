@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
+import { IterationCcw } from "lucide-react"
 
 import {
     NavigationMenu,
@@ -55,8 +55,10 @@ const components: { title: string; href: string; description: string }[] = [
 export function Header() {
     return (
         <div className="bg-white py-3 border border-b-0 flex flex-row items-center bg-white/50 backdrop-sepia-0 ">
-            <div className="px-3  mr-12">
-                <h1 className="font-semibold tracking-tight bg-linear-to-r from-stone-800 to-violet-500 bg-clip-text text-transparent text-lg"> studentpath germany</h1>
+            <div className="px-3  mr-12  text-stone-800  text-lg flex flex-row items-center justify-center">
+
+                <IterationCcw className="size-6 stroke-2  text-stone-800 mr-1 mt-1" />
+                <h1 className="font-medium text-md tracking-tight">ArrivePath</h1>
             </div>
 
         </div>

@@ -9,8 +9,8 @@ const SectionWorking = () => {
 
             <div className=" p-2  w-full flex items-center justify-center rounded-md bg-white/40 backdrop-sepia-0 ">
                 <div className=" flex flex-col text-center p-3">
-                    <h1 className="scroll-m-20 text-center font-normal tracking-tight text-balance mb-4 bg-gradient-to-r from-stone-800 to-violet-800 bg-clip-text text-transparent text-2xl/10">
-                        We’ll send you a plan and team with housing options, airport pickup, and a checklist. When you arrive, we’ll meet you, help you settle in, and guide you every step of the way.
+                    <h1 className="scroll-m-20 text-center font-normal tracking-tight text-balance mb-4 bg-gradient-to-r from-stone-800 to-violet-800 bg-clip-text text-transparent text-xl/10">
+                        We'll deliver a tailored plan, including housing options, airport pickup, and a step-by-step checklist.
                     </h1>
 
 
