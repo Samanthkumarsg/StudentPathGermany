@@ -4,30 +4,8 @@ import * as React from "react"
 import Link from "next/link"
 import { MapPin, HelpCircle, User, IterationCcw } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useEffect } from "react"
 
 export function Header() {
-
-    useEffect(() => {
-        // Wait for Botpress to load before trying to configure
-        if (typeof window !== "undefined") {
-            const interval = setInterval(() => {
-                if (window.botpressWebChat) {
-                    window.botpressWebChat.configure({
-                        botName: "Support Bot",
-                        hideWidget: true, // keep hidden until user clicks button
-                    });
-                    clearInterval(interval);
-                }
-            }, 500);
-        }
-    }, []);
-
-    const openChat = () => {
-        if (window.botpressWebChat) {
-            window.botpressWebChat.sendEvent({ type: "show" });
-        }
-    };
 
     return (
         <header className="absolute top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-sm">
@@ -59,10 +37,10 @@ export function Header() {
                 {/* Utility Links */}
                 <div className="flex items-center space-x-4 text-sm">
 
-                    <Button onClick={openChat} className="text-white hover:text-gray-200 transition-colors flex items-center space-x-1 ">
+                    <Link href="/" className="text-white hover:text-gray-200 transition-colors flex items-center space-x-1 ">
                         <HelpCircle className="size-4" />
                         <span>Help</span>
-                    </Button>
+                    </Link>
                     <div className="bg-white hover:bg-white/80 text-gray-800 border-none rounded-full px-4 py-2 ml-2">
                         Login
                     </div>
