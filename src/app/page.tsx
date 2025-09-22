@@ -1,7 +1,7 @@
 import { Faq } from "@/components/Faq";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
-import Intro from "@/components/Intro";
+import Hero from "@/components/Hero";
 import SectionHelp from "@/components/SectionHelp";
 import SectionWhyUs from "@/components/SectionWhyUs";
 import SectionWorking from "@/components/SectionWorking";
@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div className="">
       <Header />
-      <Intro />
-      <SectionWorking />
+      <Hero />
+      {/* <SectionWorking /> */}
       <SectionWhyUs />
       <SectionHelp />
       <Faq />

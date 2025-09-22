@@ -45,9 +45,9 @@ export function Faq() {
     ];
 
     return (
-        <div className="border  p-5 bg-white">
+        <div className="max-w-7xl mx-auto border  p-5 bg-white">
             <div className="border rounded-md p-5 bg-white flex flex-col">
-                <h1 className="px-5 text-md font-semibold mb-2">FAQs</h1>
+                <h1 className="px-5 text-xl text-stone-600 font-semibold mb-2">Frequently Asked Questions</h1>
                 <Accordion
                     type="single"
                     collapsible
@@ -56,8 +56,8 @@ export function Faq() {
                 >
                     {faqs.map(faq => (
                         <AccordionItem key={faq.id} value={faq.id}>
-                            <AccordionTrigger>{faq.question}</AccordionTrigger>
-                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                            <AccordionTrigger className="font-medium">{faq.question}</AccordionTrigger>
+                            <AccordionContent className="flex flex-col gap-4 text-balance font-normal">
                                 <p>{faq.answer}</p>
                             </AccordionContent>
                         </AccordionItem>

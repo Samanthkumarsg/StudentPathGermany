@@ -2,66 +2,73 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { IterationCcw } from "lucide-react"
-
-import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-
-const components: { title: string; href: string; description: string }[] = [
-    {
-        title: "Alert Dialog",
-        href: "/docs/primitives/alert-dialog",
-        description:
-            "A modal dialog that interrupts the user with important content and expects a response.",
-    },
-    {
-        title: "Hover Card",
-        href: "/docs/primitives/hover-card",
-        description:
-            "For sighted users to preview content available behind a link.",
-    },
-    {
-        title: "Progress",
-        href: "/docs/primitives/progress",
-        description:
-            "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    },
-    {
-        title: "Scroll-area",
-        href: "/docs/primitives/scroll-area",
-        description: "Visually or semantically separates content.",
-    },
-    {
-        title: "Tabs",
-        href: "/docs/primitives/tabs",
-        description:
-            "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-        title: "Tooltip",
-        href: "/docs/primitives/tooltip",
-        description:
-            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-    },
-]
+import { MapPin, HelpCircle, User, IterationCcw } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { useEffect } from "react"
 
 export function Header() {
+
+    useEffect(() => {
+        // Wait for Botpress to load before trying to configure
+        if (typeof window !== "undefined") {
+            const interval = setInterval(() => {
+                if (window.botpressWebChat) {
+                    window.botpressWebChat.configure({
+                        botName: "Support Bot",
+                        hideWidget: true, // keep hidden until user clicks button
+                    });
+                    clearInterval(interval);
+                }
+            }, 500);
+        }
+    }, []);
+
+    const openChat = () => {
+        if (window.botpressWebChat) {
+            window.botpressWebChat.sendEvent({ type: "show" });
+        }
+    };
+
     return (
-        <div className="bg-white py-3 border border-b-0 flex flex-row items-center bg-white/50 backdrop-sepia-0 ">
-            <div className="px-3  mr-12  text-stone-800  text-lg flex flex-row items-center justify-center">
+        <header className="absolute top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-sm">
+            <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+                {/* Logo */}
+                <div className="px-3  mr-12  text-whites  text-lg flex flex-row items-center justify-center">
 
-                <IterationCcw className="size-6 stroke-2  text-stone-800 mr-1 mt-1" />
-                <h1 className="font-medium text-md tracking-tight">ArrivePath</h1>
+                    <IterationCcw className="size-6 stroke-2  text-white mr-1 mt-1" />
+                    <h1 className="font-medium text-md tracking-tight text-white">ArrivePath</h1>
+                </div>
+
+                {/* Navigation Links */}
+                <nav className="hidden md:flex items-center space-x-8 text-sm">
+
+                    {/* <Link href="/" className="text-white hover:text-gray-200 transition-colors">
+                        Features
+                    </Link>
+                    <Link href="/" className="text-white hover:text-gray-200 transition-colors">
+                        Resourses
+                    </Link>
+                    <Link href="/" className="text-white hover:text-gray-200 transition-colors">
+                        Company
+                    </Link>
+                    <Link href="/" className="text-white hover:text-gray-200 transition-colors">
+                        Blogs
+                    </Link> */}
+                </nav>
+
+                {/* Utility Links */}
+                <div className="flex items-center space-x-4 text-sm">
+
+                    <Button onClick={openChat} className="text-white hover:text-gray-200 transition-colors flex items-center space-x-1 ">
+                        <HelpCircle className="size-4" />
+                        <span>Help</span>
+                    </Button>
+                    <div className="bg-white hover:bg-white/80 text-gray-800 border-none rounded-full px-4 py-2 ml-2">
+                        Login
+                    </div>
+                </div>
             </div>
-
-        </div>
+        </header>
     )
 }
 
