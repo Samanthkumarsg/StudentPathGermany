@@ -3,7 +3,7 @@ import { Plane, House, GraduationCap, Landmark, Handshake } from 'lucide-react';
 
 const SectionWhyUs = () => {
     return (
-        <div className="max-w-7xl mx-auto mt-18 z-60  rounded-xl backdrop-blur-sm  py-12">
+        <div className="max-w-7xl mx-auto mt-12 z-60  rounded-xl backdrop-blur-sm  py-12">
             <div className='mb-18 text-center'>
                 <h1 className='text-2xl font-semibold text-stone-800 flex items-center justify-center'>
                     Services we provide
