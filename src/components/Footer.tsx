@@ -5,7 +5,7 @@ import { IterationCcw, Waypoints } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <div className=" max-w-7xl mx-auto border border-t-0 pt-10 px-5 relative overflow-hidden bg-white backdrop-sepia-0">
+        <div className=" max-w-7xl mx-auto rounded-t-xl shadow-xs pt-10 px-5 relative overflow-hidden bg-white backdrop-sepia-0">
             {/* <div className="absolute -z-10 top-16 left-1/2 -translate-x-1/2 animate-spin animate-bounce [animation-duration:3s] size-120 rounded-full bg-gradient-to-r from-violet-500 via-red-400 to-yellow-300 blur-3xl opacity-50"></div> */}
 
             <div className="flex flex-col p-5 rounded-xl  bg-white/50">

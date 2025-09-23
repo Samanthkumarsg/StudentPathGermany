@@ -45,8 +45,8 @@ export function Faq() {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto border  p-5 bg-white">
-            <div className="border rounded-md p-5 bg-white flex flex-col">
+        <div className="max-w-7xl mx-auto  p-5 py-12 rounded-xl my-12 bg-white">
+            <div className=" rounded-md  bg-white flex flex-col">
                 <h1 className="px-5 text-xl text-stone-600 font-semibold mb-2">Frequently Asked Questions</h1>
                 <Accordion
                     type="single"
