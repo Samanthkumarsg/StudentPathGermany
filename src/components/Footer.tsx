@@ -13,7 +13,17 @@ const Footer = () => {
                 <div className=' flex flex-col items-start justify-center'>
                     <div className="mb-2 text-whites  text-lg flex flex-row items-center justify-center">
 
-                        <IterationCcw className="size-6 stroke-2  text-stone-800 mr-1 mt-1" />
+                        <svg width="45" height="50" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="transparent" />
+                            <g>
+                                <polygon points="100,30 45,170 65,170 100,70 135,140 155,140 100,30"
+                                    fill="" />
+                                {/* <rect x="90" y="120" width="55" height="20" fill="white" /> */}
+                                <rect x="100" y="125" width="45" height="15" fill="" />
+                            </g>
+                        </svg>
+
+
                         <h1 className="font-medium text-md tracking-tight text-stone-800">ArrivePath</h1>
                     </div>
                     <h1 className='scroll-m-20 text-left font-normal tracking-tight text-balance mb-4 text-stone-600  text-lg/8'>We help international students start their journey in Germany with housing, legal support, banking, and job connections — all in one place.</h1>

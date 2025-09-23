@@ -34,13 +34,13 @@ export function Header() {
 
                 {/* Utility Links */}
                 <div className="flex items-center space-x-4 text-sm">
-                    <Link
+                    {/* <Link
                         href="/"
                         className="text-white hover:text-gray-200 transition-colors flex items-center space-x-1"
                     >
                         <HelpCircle className="w-4 h-4" />
                         <span>Help</span>
-                    </Link>
+                    </Link> */}
                     <div
                         data-tally-open="3q90rY"
                         data-tally-hide-title="1"
@@ -48,7 +48,7 @@ export function Header() {
                         data-tally-form-events-forwarding="1"
                         className="bg-white hover:bg-white/80 text-gray-800 border-none rounded-full px-4 py-2 ml-2"
                     >
-                        Start your journey
+                        Start now
                     </div>
                 </div>
             </div>
