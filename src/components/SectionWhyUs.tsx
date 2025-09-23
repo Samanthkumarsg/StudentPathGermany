@@ -13,7 +13,7 @@ const SectionWhyUs = () => {
                 </h2>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 *:bg-white p-5 sm:p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 *:bg-white p-5 sm:p-4">
 
                 <div className="flex flex-col p-5  rounded-lg  ">
 
