@@ -8,7 +8,7 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
         const lenis = new Lenis({
             duration: 1.2,
             lerp: 0.075,
-            smoothWheel: true, // Replaced 'smooth' with 'smoothWheel'
+            smoothWheel: true,
         });
 
         function raf(time: number) {

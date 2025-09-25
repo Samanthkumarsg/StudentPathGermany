@@ -1,13 +1,12 @@
-"use client"
+"use client";
 import { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 
 export default function useLenis() {
-    
     useEffect(() => {
         const lenis = new Lenis({
-            smooth: true,
-            lerp: 0.1, // Adjust smoothness
+            smoothWheel: true,
+            lerp: 0.1,
             wheelMultiplier: 1,
         });
 
