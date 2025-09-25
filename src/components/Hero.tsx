@@ -1,9 +1,34 @@
+"use client";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "./ui/button";
 
 const Hero = () => {
+
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const el = ref.current;
+
+        gsap.fromTo(
+            el,
+            { y: 0 },
+            {
+                y: -100,
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: true,
+                },
+            }
+        );
+    }, []);
+
     return (
         <section
-            className="relative min-h-[75vh] bg-cover bg-center bg-no-repeat bg-[url('https://ik.imagekit.io/1zd8gzbhye/arrivefriends.jpg?updatedAt=1757969722549')] flex items-center justify-start"
+            className="relative min-h-screen mask-b-from-80% mask-b-to-98%   bg-cover bg-center bg-no-repeat bg-[url('https://ik.imagekit.io/1zd8gzbhye/arrivefriends.jpg?updatedAt=1757969722549')] flex items-center justify-start "
         >
             {/* Dark overlay */}
             <div className="absolute inset-0 bg-black/50" />

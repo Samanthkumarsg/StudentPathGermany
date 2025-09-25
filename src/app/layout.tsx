@@ -5,6 +5,8 @@ import Script from "next/script"; // ✅ Import Next.js Script
 import "./globals.css";
 import "./theme.css";
 import ClientProvider from "@/components/ClientProvider"; // Import the new Client Component
+import useLenis from "@/hooks/useLenis";
+import LenisProvider from "@/components/LenisProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,9 +43,9 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} ${inter.variable} antialiased mx-auto w-full bg-gray-50`}
+        className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} ${inter.variable} antialiased mx-auto w-full bg-gray-50 relative`}
       >
-        <ClientProvider>{children}</ClientProvider>
+        <LenisProvider>  <ClientProvider>{children}</ClientProvider> </LenisProvider>
 
         {/* ✅ Botpress Chat Widget */}
         <Script
@@ -61,6 +63,6 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </body>
-    </html>
+    </html >
   );
 }

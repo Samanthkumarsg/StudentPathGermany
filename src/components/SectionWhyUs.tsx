@@ -3,8 +3,8 @@ import { Plane, House, GraduationCap, Landmark, Handshake } from 'lucide-react';
 
 const SectionWhyUs = () => {
     return (
-        <div className="max-w-7xl mx-auto mt-12 z-60  rounded-xl backdrop-blur-sm  py-12">
-            <div className='mb-18 text-center'>
+        <div className="max-w-7xl mx-auto mt-12  rounded-xl  backdrop-blur-xs bg-white/20 mask-t-from-98% mask-t-to-100% p-10 ">
+            <div className='mb-18 text-center '>
                 <h1 className='text-2xl font-semibold text-stone-800 flex items-center justify-center'>
                     Services we provide
                 </h1>
@@ -13,9 +13,9 @@ const SectionWhyUs = () => {
                 </h2>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 *:bg-white *:shadow-xs ">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 *:bg-white *:shadow-xs   ">
 
-                <div className="flex flex-col p-10 rounded-lg">
+                <div className="flex flex-col p-10 rounded-lg relative z-20">
                     <div className="text-4xl mb-3 text-stone-800"><House className="size-8 stroke-1" /></div>
                     <h1 className="text-lg font-medium mb-2">Find Housing Easily</h1>
                     <h2 className='text-stone-600 font-light text-base/6'>Verified apartments, dorms, and shared flats matched to your budget.</h2>

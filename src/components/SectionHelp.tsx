@@ -12,15 +12,7 @@ const SectionHelp = () => {
                 <div className='my-5 flex items-start justify-center flex-col'>
                     <div className='flex items-center justify-center flex-row text-stone-800 mb-2'>
                         {/* <IterationCcw className="size-6 mt-1 stroke-2  " /> */}
-                        <svg width="40" height="50" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="200" height="200" fill="transparent" />
-                            <g>
-                                <polygon points="100,30 45,170 65,170 100,70 135,140 155,140 100,30"
-                                    fill="" />
-                                {/* <rect x="90" y="120" width="55" height="20" fill="white" /> */}
-                                <rect x="100" y="125" width="45" height="15" fill="" />
-                            </g>
-                        </svg>
+
 
 
                         <h1 className='font-medium ml-1 text-lg'>ArrivePath</h1>
