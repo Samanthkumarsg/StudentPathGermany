@@ -28,7 +28,7 @@ const Hero = () => {
 
     return (
         <section
-            className="relative min-h-screen mask-b-from-80% mask-b-to-98%   bg-cover bg-center bg-no-repeat bg-[url('https://ik.imagekit.io/1zd8gzbhye/arrivefriends.jpg?updatedAt=1757969722549')] flex items-center justify-start "
+            className="relative min-h-screen mask-b-from-70% mask-b-to-98%   bg-cover bg-center bg-no-repeat bg-[url('https://ik.imagekit.io/1zd8gzbhye/arrivefriends.jpg?updatedAt=1757969722549')] flex items-center justify-start "
         >
             {/* Dark overlay */}
             <div className="absolute inset-0 bg-black/50" />
