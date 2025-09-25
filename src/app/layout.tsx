@@ -5,7 +5,6 @@ import Script from "next/script"; // ✅ Import Next.js Script
 import "./globals.css";
 import "./theme.css";
 import ClientProvider from "@/components/ClientProvider"; // Import the new Client Component
-import useLenis from "@/hooks/useLenis";
 import LenisProvider from "@/components/LenisProvider";
 
 const geistSans = Geist({
